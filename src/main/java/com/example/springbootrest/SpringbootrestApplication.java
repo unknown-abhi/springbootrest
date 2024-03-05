@@ -1,15 +1,16 @@
 package com.example.springbootrest;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SpringbootrestApplication {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = (ApplicationContext) SpringApplication.run(SpringbootrestApplication.class, args);
+        ApplicationContext context = SpringApplication.run(SpringbootrestApplication.class, args);
+
     }
 
 }
