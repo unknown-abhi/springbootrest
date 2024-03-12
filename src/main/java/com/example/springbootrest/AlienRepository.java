@@ -1,7 +1,7 @@
 package com.example.springbootrest;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AlienRepository extends CrudRepository<Alien, Integer> {
+public interface AlienRepository extends JpaRepository<Alien, Integer> {
 
 }
