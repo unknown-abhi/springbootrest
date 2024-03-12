@@ -16,7 +16,6 @@ public class AlienResource {
     AlienRepository repository;
 
     @GetMapping("aliens")
-    @ResponseBody
     public List<Alien> getAliens() {
         List<Alien> aliens = (List<Alien>) repository.findAll();
 
@@ -24,7 +23,6 @@ public class AlienResource {
     }
 
     @GetMapping("aliens/{id}")
-    @ResponseBody
     public Optional<Alien> getAlien(@PathVariable("id") int id) {
         Optional<Alien> alien = repository.findById(id);
 
