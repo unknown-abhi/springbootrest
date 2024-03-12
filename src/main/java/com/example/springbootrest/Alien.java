@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Aliens {
+public class Alien {
 
     @Id
     private int id;
